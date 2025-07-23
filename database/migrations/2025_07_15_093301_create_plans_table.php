@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->string('description')->nullable();
-            $table->decimal( 'price_id', 8, 2);
+            $table->decimal( 'price', 8, 2);
             $table->integer('task_limit')->default(0);
             $table->timestamps();
         });
